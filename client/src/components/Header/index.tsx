@@ -2,8 +2,7 @@ import React from 'react'
 
 type Props = {
     name: string;
-    // eslint-disable-line @typescript-eslint/no-explicit-any
-    buttonComponent?: any;
+    buttonComponent?: any; // eslint-disable-line @typescript-eslint/no-explicit-any
     isSMallText?: boolean;
 }
 
