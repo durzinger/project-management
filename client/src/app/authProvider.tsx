@@ -1,5 +1,5 @@
 import React from 'react'
-import { Authenticator, Placeholder } from '@aws-amplify/ui-react'
+import { Authenticator } from '@aws-amplify/ui-react'
 import { Amplify } from 'aws-amplify'
 import "@aws-amplify/ui-react/styles.css"
 
@@ -41,11 +41,11 @@ const formFields = {
     }
 }
 
-const AuthProvider = ({ children}: any) => {
+const AuthProvider = ({ children}: any) => { // eslint-disable-line @typescript-eslint/no-explicit-any
     return (
         <div className="mt-5">
             <Authenticator formFields={formFields}>
-                {({ user }: any) => 
+                {({ user }: any) => // eslint-disable-line @typescript-eslint/no-explicit-any
                     user ? (
                         <div>{children}</div>
                     ) : (
