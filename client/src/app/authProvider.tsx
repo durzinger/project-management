@@ -43,7 +43,7 @@ const formFields = {
 
 const AuthProvider = ({ children}: any) => { // eslint-disable-line @typescript-eslint/no-explicit-any
     return (
-        <div className="mt-5">
+        <div>
             <Authenticator formFields={formFields}>
                 {({ user }: any) => // eslint-disable-line @typescript-eslint/no-explicit-any
                     user ? (
